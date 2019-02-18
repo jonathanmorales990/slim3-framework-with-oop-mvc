@@ -22,7 +22,7 @@ final class HomeController {
 
 	 	$vars['employeer'] = $employeer->getName();
 
-	 	return $this->container->renderer->render($response, "home.php", $vars);
+	 	return $this->container->views->render($response, "home.php", $vars);
 	}
 
 }
