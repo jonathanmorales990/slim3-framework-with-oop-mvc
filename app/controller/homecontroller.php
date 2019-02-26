@@ -16,9 +16,7 @@ final class HomeController {
 	}
 
 	public function index( $request, $response){
-		$employeer = new employeer();
-		
-		$employeer->setName('John Doe');
+		$employeer = new employeer('John Doe');
 
 	 	$vars['employeer'] = $employeer->getName();
 
